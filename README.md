@@ -2,6 +2,10 @@
 
 Site web responsive dédié aux services de beauté, spa, hammam et mariage.
 
+## Aperçu
+
+![Accueil](screenshot.png)
+
 ## Fonctionnalités
 
 - Présentation des services
