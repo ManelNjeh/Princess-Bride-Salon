@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Princess Bride Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><form onsubmit="return contact()"> 
+<header>
+    <nav>
+        <h1>Princess Bride Salon</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="hammam.html">Hammam</a></li>
+            <li><a href="boutique.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="appt-card">
+  <div class="appt-badge">✦ Contact Us</div>
+  <h1 class="appt-title">Get In Touch</h1>
+  <p class="appt-sub">
+    You can contact us using the information below or send a message.
+  </p>
+  <div class="field-group">
+    <p style="text-align:center; color:#a08080;">
+      ✉️ contact@princessbride.com
+    </p>
+    <input class="appt-input" type="text" id="name" placeholder="Your Name" required>
+    <input class="appt-input" type="email" id="email" placeholder="Your Email" required>
+    <textarea class="appt-textarea" id="message" placeholder="Your Message" required></textarea>
+  </div>
+  <button class="btn-book" id="sendMessage" onclick="contact()">
+    Send Message
+  </button>
+</div>
+<footer>
+    <p>📍 Sfax, Tunisia</p>
+    <p>📞 +216 21 245 511</p>
+    <p>© 2026 Princess Bride Salon</p>
+</footer>
+</form>
+</body>
+</html>

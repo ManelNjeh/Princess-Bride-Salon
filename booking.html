@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Appointment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="man" >
+ <form onsubmit="return booking()">
+<header>
+    <nav>
+        <h1>Princess Bride Salon</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="hammam.html">Hammam</a></li>
+            <li><a href="boutique.html">Shop</a></li>
+            
+            <li><a href="contact.html">Contact</a></li><li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+</header>
+  <div class="appt-card">
+    <div class="appt-badge">✦ Reserve Your Session</div>
+    <h1 class="appt-title">Book Your<br>Appointment</h1>
+    <p class="appt-sub">Fill in the details below and we'll confirm your session shortly.</p>
+
+    <div class="field-group">
+
+      <div class="field-row">
+        <div>
+          <label class="field-label">First Name</label>
+          <div class="icon-field">
+            <span class="field-icon"></span>
+            <input class="appt-input" type="text" placeholder="Manel" required>
+          </div>
+        </div>
+        <div>
+          <label class="field-label">Last Name</label>
+          <input class="appt-input" type="text" placeholder="Njeh" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div>
+          <label class="field-label">Phone</label>
+          <input class="appt-input" type="tel" placeholder="+216 XX XXX XXX" maxlength="8" required>
+        </div>
+        <div>
+          <label class="field-label">Email</label>
+          <input class="appt-input" type="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+
+      <div>
+        <label class="field-label">Service</label>
+        <div class="select-wrap">
+          <select class="appt-select">
+            <option value="" disabled selected>Choose a service</option>
+            <option>Facial &amp; Skin Care</option>
+            <option>Massage Therapy</option>
+            <option>Hair Styling</option>
+            <option>Nail Treatment</option>
+            <option>Body Wrap</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div>
+          <label class="field-label">Preferred Date</label>
+          <input class="appt-input" type="date">
+        </div>
+        <div>
+          <label class="field-label">Preferred Time</label>
+          <div class="select-wrap">
+            <select class="appt-select">
+              <option value="" disabled selected>Select time</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>02:00 PM</option>
+              <option>03:00 PM</option>
+              <option>04:00 PM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label class="field-label">Notes <span class="optional">(optional)</span></label>
+        <textarea class="appt-textarea" placeholder="Any special requests or concerns..."></textarea>
+      </div>
+
+    </div>
+
+    <button class="btn-book" type="submit" onclick="booking()" >
+      Book Now
+    </button>
+
+    <p class="appt-footer">
+      By booking, you agree to our <a href="#">Terms &amp; Cancellation Policy</a>
+    </p>
+  </div></form>
+  <footer>
+    <p>📍 Sfax, Tunisia</p>
+    <p>📞 +216 21 245 511</p>
+    <p>© 2026 Princess Bride Salon</p>
+  </footer>
+  
+</body>
+</html>
